@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 25</title>
+</head>
+<body>
+    
+
+    <h1>JSON</h1>
+    <h3>Javascript Object Notation</h3>
+
+<script> 
+    
+    const user = {id: 44, name: "Shohan", friendsAge: [23, 45, 22], friends: ["tuhin", "Limon", "tanim"]};   //js type written
+    //const user = {"id": 44, "name": "Shohan"}; //JSON type written
+    const userJSON = JSON.stringify(user);
+    console.log(userJSON);
+    const userFromJson = JSON.parse(userJSON);
+    console.log(userFromJson);  
+
+
+</script>    
+
+</body>
+</html>
