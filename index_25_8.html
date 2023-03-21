@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 25 - 8</title>
     <style>
-        form{
+        .form{
             width: 500px;
             margin: 100px auto;
             border: 2px solid black;
@@ -20,7 +20,7 @@
         textarea{
             width: 100%;
             padding: 10px 10px;
-        }
+        } 
         button{
             padding: 12px 24px;
             border-radius: 4;
@@ -43,20 +43,20 @@
 
     <ul id="users-container"></ul>
 
-    <form>
-        <input id="title" type="text" placeholder="title">
+    <section class="form">
+        <input id="title" placeholder="title">
         <input id="bodyContent" type="text" placeholder="post-body">
-        <button id="Submit" type="submit">Submit</button>
-    </form>
-
+        <button id="Submit">Submit</button>
+    </section>
+        
 
 <script>
+
     document.getElementById("Submit").addEventListener("click", function(){
-        const title = document.getElementById("title").value;
-        const bodyContent = document.getElementById("bodyContent").value;
-        const post = {title:title, body:bodyContent};
-        nowPostToServer(post);
-        // console.log("clicked");
+        // console.log('clicked');
+        const title = document.getElementById('title').value;
+        const bodyContent = document.getElementById('bodyContent').value;
+        console.log(title, bodyContent);
     })
 
 
